@@ -1,0 +1,65 @@
+@import "_components/_normalize.scss";
+@import "_components/_stylesheet.scss";
+@import "_components/_vars.scss";
+@import "_components/_mixin.scss";
+
+
+html {
+  font-size: $font-size;
+  font-family: $font-family;
+  // text-rendering: optimizeLegibility;
+  line-height: $line-height;
+  font-weight: 400;
+  font-style: normal;
+  color: $black;
+  // text-rendering: optimizeLegibility;   
+}
+
+//  body{ 
+
+  // zoom: 110%
+// } 
+
+.cf:after,
+.cf:before { content: " "; 
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  margin: 0 auto;
+  // @media (max-width: $md1+px) {max-width: 970px;}
+  @media screen and (max-width: #{$md2}px) {max-width: 720px;}
+  @media screen and (max-width: #{$md3}px) {max-width:none;padding: 0 10px;};
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap:30px;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+img{
+
+  max-width: 100%;
+}
+
+@import "_components/_global.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+
+
+
