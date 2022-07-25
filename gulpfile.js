@@ -110,9 +110,10 @@ exports.clear = clear;
 exports.scss = scss;
 exports.svg = svg;
 exports.img = img;
+exports.font = font;
 exports.fontstyle = fontstyle;
 
 
-exports.font = series(font, fontstyle);
+exports.newfont = series(font, fontstyle);
 
 exports.default = series(clear, parallel(html,scss), parallel(watcher, server));
