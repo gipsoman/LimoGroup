@@ -19,6 +19,7 @@ const autoPrefixer = require("gulp-autoprefixer");
 const svg = require("./task/svg.js");
 const font = require("./task/font.js");
 const img = require("./task/img.js");
+const fontstyle = require("./task/new_font.js");
 
 
 
@@ -108,10 +109,10 @@ exports.watch = watcher;
 exports.clear = clear;
 exports.scss = scss;
 exports.svg = svg;
-exports.font = font;
 exports.img = img;
+exports.fontstyle = fontstyle;
 
 
-
+exports.font = series(font, fontstyle);
 
 exports.default = series(clear, parallel(html,scss), parallel(watcher, server));

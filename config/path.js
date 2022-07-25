@@ -29,4 +29,9 @@ module.exports = {
     watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
     dest: pathDest + "/img",
   },
+  fontstyle: {
+    src: pathSrc + "/styles/_components/_stylesheet.scss",
+    watch: pathSrc + "/font/*.{ttf,otf,otc,ttc,woff,woff2,eot,svg}",
+    dest: pathDest + "/font",
+  },
 };
