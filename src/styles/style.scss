@@ -56,6 +56,17 @@ img{
   max-width: 100%;
 }
 
+.vhidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: nonr;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @import "_components/_global.scss";
 @import "_header.scss";
 @import "_main.scss";
