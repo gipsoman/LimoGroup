@@ -22,7 +22,7 @@ module.exports = {
   font: {
     src: pathSrc + "/font/*.{ttf,otf,otc,ttc,woff,woff2,eot,svg}",
     watch: pathSrc + "/font/*.{ttf,otf,otc,ttc,woff,woff2,eot,svg}",
-    dest: pathDest + "/font",
+    dest: pathDest + "/fonts",
   },
   img: {
     src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
