@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include("kit/_head.html",
-{"title" : "Главная"})
+{"title" : "Главная",
+"slider" : '<link rel="stylesheet" href="/css/swiper-bundle.min.css">',
+})
 <body>
   @@include("kit/_header.html")
   
@@ -9,5 +11,7 @@
 
   @@include("kit/_main.html")
   @@include("kit/_footer.html")
+  <script src="/js/swiper-bundle.min.js"></script>
+  @@include("kit/_script.html")
 </body>
 </html>

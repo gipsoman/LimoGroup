@@ -13,6 +13,12 @@ module.exports = {
     src: pathSrc + "/styles/*.scss",
     watch: pathSrc + "/styles/**/*.scss",
     dest: pathDest + "/css",
+    vendor: pathSrc + "/styles/vendor/*.css",
+  },
+  js: {
+    src: pathSrc + "/js/*.js",
+    watch: pathSrc + "/js/**/*.js",
+    dest: pathDest + "/js",
   },
   svg: {
     src: pathSrc + "/img/svg/*.svg",
@@ -32,6 +38,6 @@ module.exports = {
   fontstyle: {
     src: pathSrc + "/styles/_components/_stylesheet.scss",
     watch: pathSrc + "/font/*.{ttf,otf,otc,ttc,woff,woff2,eot,svg}",
-    dest: pathDest + "/font",
+    dest: pathDest + "/fonts",
   },
 };

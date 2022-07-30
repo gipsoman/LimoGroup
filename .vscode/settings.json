@@ -5,5 +5,5 @@
 		// "dest": "${workspaceFolder}/dest/",
 		"global": "/Users/dummy/globalLibs"
 	},
-  "workbench.experimental.editSessions.enabled": true
+	"workbench.experimental.editSessions.enabled": true
 }

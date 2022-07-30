@@ -20,11 +20,26 @@ const svg = require("./task/svg.js");
 const font = require("./task/font.js");
 const img = require("./task/img.js");
 const fontstyle = require("./task/new_font.js");
+const vendor = require("./task/vendor.js");
 
 
 
+// JS
 
-
+const js = function () {
+  return src(path.js.src)
+    .pipe(
+      plumber({
+        errorHandler: notify.onError((error) => ({
+          title: "JS",
+          message: error.message,
+        })),
+      })
+    )
+    .pipe(fileinclude())
+    .pipe(dest(path.js.dest))
+    .pipe(browserSync.stream());
+};
 
 
 
@@ -75,7 +90,7 @@ const html = function () {
 
 
 const clear = function() {
-  return del(["dest/**", "!dest/img", "!dest/favicons", "!dest/font"]);
+  return del(["dest/**", "!dest/img", "!dest/favicons", "!dest/fonts"]);
 }
 
 
@@ -89,7 +104,6 @@ const server = (cb) => {
     },
     browser: "Google Chrome Canary",
     notify: false,
-    open:true,
   });
   cb();
 }
@@ -98,6 +112,7 @@ const server = (cb) => {
 const watcher = (cb) => {
 
   watch("./src/html/**/*.html", html);
+  watch(path.js.watch, js);
   watch("./src/styles/**/*.scss", scss).on("all", browserSync.reload);
   watch("./src/img/svg/*.svg", svg);
   watch(path.img.watch, img);
@@ -108,12 +123,14 @@ exports.html = html;
 exports.watch = watcher;
 exports.clear = clear;
 exports.scss = scss;
+exports.js = js;
 exports.svg = svg;
 exports.img = img;
 exports.font = font;
 exports.fontstyle = fontstyle;
+exports.vendor = vendor;
 
 
 exports.newfont = series(font, fontstyle);
 
-exports.default = series(clear, parallel(html,scss), parallel(watcher, server));
+exports.default = series(clear, parallel(html,scss,js,vendor), parallel(watcher, server));

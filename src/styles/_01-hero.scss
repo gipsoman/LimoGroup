@@ -1,0 +1,268 @@
+/* 01-hero ================================================== */
+.hero {
+   width: 100%;
+   margin-bottom: -50px;
+
+   &__wrapper{
+    
+   margin: 0 auto;
+   border-radius: 41px;
+   background-color: $white;
+   }
+   // .hero__line
+   &__line {
+
+      background-image: url('/img/hero1.png');
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: 60%;
+      width: 100%;
+
+      @media screen and (max-width: $md3+px) {
+         background-position: right top 60%;
+      }
+
+      @media screen and (max-width: 570px) {
+         background-position: center top 80%;
+      }
+   }
+
+   // .hero__offer
+   &__offer {
+      margin: 0 20px;
+   }
+
+   // .hero__title
+   &__title {
+      @include font(110, 122);
+      padding-top: 66px;
+      font-family: $font-title;
+      font-weight: 400;
+      color: $black;
+      max-width: 600px;
+      margin-bottom: 32px;
+
+      @media screen and (max-width: #{$md2}px) {
+         font-size: 80px;
+         padding-top: 30px;
+         margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 570px) {
+         font-size: 70px;
+
+      }
+   }
+
+   // .hero__descr
+   &__descr {
+      @include font(25, 33);
+      margin-bottom: 53px;
+      color: $black;
+      max-width: 380px;
+
+
+   }
+
+   // .hero__btn
+   &__btn {
+      margin-bottom: 192px;
+
+      @media screen and (max-width: 570px) {
+         margin-bottom: 260px;
+      }
+   }
+
+   // .hero__tabs
+   &__tabs {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: -100px;
+   }
+}
+
+.tab {
+
+   // .tab__top
+   &__top {
+      // background-color: $accent;
+      display: flex;
+
+   }
+
+   // .tab__link
+   &__link {
+      @media screen and (max-width: 570px) {
+         width: 50%;
+      }
+
+      display: block;
+      @include font(20, 26);
+      margin: 0;
+      padding: 24px 62px;
+      background-color: $accent;
+
+      &:first-child {
+         border-radius: 11px 0px 0px 0px;
+      }
+
+      &:last-child {
+         border-radius: 0px 11px 0px 0px;
+      }
+
+      &:focus-within {
+         background-color: $primary;
+      }
+   }
+
+   // .tab__form
+   &__form {
+      width: 100%;
+      background-color: $primary;
+      padding: 10px 10px 10px 40px;
+      border-radius: 0px 11px 11px 11px;
+      font-size: 18px;
+      line-height: 24px;
+
+      @media screen and (max-width: 570px) {
+         border-radius: 0px 0px 11px 11px;
+         margin-bottom: 20px;
+         padding-bottom: 20px;
+
+      }
+
+   }
+
+   //    &__form > form:target {
+   //    display: block;
+   //  }
+
+
+
+
+
+
+   &__flex {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 40px;
+
+      @media screen and (max-width: #{$md2}px) {
+         grid-template-columns: repeat(6, 1fr);
+      }
+
+      @media screen and (max-width: 570px) {
+         grid-template-columns: 1fr;
+
+      }
+
+   }
+
+   &__label {}
+
+   // .tab__label
+   &__label {
+
+      grid-column: 3 span;
+      display: block;
+
+      // margin-right: 40px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: #CBCBCB;
+
+      border-right: 1px solid $white;
+
+      @media screen and (max-width: #{$md1}px) {}
+
+      &:nth-last-child(2) {
+         grid-column: span 2;
+         border-right: none;
+
+         @media screen and (max-width: #{$md2}px) {
+            // grid-row: 2;
+         }
+
+         @media screen and (max-width: 570px) {
+            border-bottom: none;
+
+         }
+
+      }
+
+      &:nth-last-child(3) {
+         grid-column: span 2;
+
+         @media screen and (max-width: #{$md2}px) {
+            grid-row: 2;
+         }
+
+         @media screen and (max-width: $md4+px) {
+            //  grid-row: 3;
+            // width: 100%;
+            // grid-column: span 1;
+         }
+      }
+
+      @media screen and (max-width: 570px) {
+         border-right: none;
+         // margin-top: 15px;
+         // padding-bottom: 0px;
+
+
+      }
+
+   }
+
+   // .tab__input
+   &__input {
+      margin: 0;
+      padding: 0;
+      display: block;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      font-weight: 600;
+      color: $white;
+      width: 100%;
+      padding-right: 10px;
+      margin-top: 5px;
+
+      &::placeholder {
+         color: $white;
+      }
+
+   }
+
+   // .tab__btn
+   &__btn {
+      margin-left: 0;
+      padding: 28px 63px;
+      grid-column: span 2;
+
+      @media screen and (max-width: #{$md1}px) {
+         padding: 28px 43px;
+      }
+   }
+}
+
+.btn--white {}
+
+#tabs-1,
+#tabs-2 {
+   display: none;
+}
+
+#tabs-1 {
+   display: block;
+}
+
+// .tab__form:target {
+//    display: block;
+// }
+//   #tabs-2:target ~ #tabs-1 {
+//       display: none;
+//    }
+#tabs-2:target {
+   display: block;
+}

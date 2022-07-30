@@ -1,0 +1,188 @@
+/* 04-fleets ================================================== */
+.fleets {
+  padding-top: 88px;
+		// .fleets__title
+		&__title {
+      margin-bottom: 1px;
+		}
+		// .fleets__descr
+		&__descr {
+      margin-bottom: 70px;
+		}
+}
+
+.sliders {
+}
+.slide-block {
+  background-image: url(../img/slide_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  // background-size: 100% 50%;
+  width: 100%;
+  border-radius: 27px;
+  position: relative;
+	@media screen and (max-width: #{$md2}px) { 
+	background-size: 100% 80%;
+	}
+		// .slide-block__top
+		&__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+			padding-top: 30px;
+		}
+		// .slide-block__title
+		&__title {
+      font-weight: 400;
+font-size: 60px;
+line-height: calc(117/60);
+			@media screen and (max-width: #{$md2}px) { 
+			font-size: 36px;
+			}
+		}
+		// .slide-block__price
+		&__price {
+            font-weight: 400;
+font-size: 60px;
+line-height: calc(117/60);
+			@media screen and (max-width: #{$md2}px) { 
+			font-size: 36px;
+			}
+		}
+		// .slide-block__price--hour
+		&__price--hour {
+      font-size: 38px;
+line-height: calc(74/38);
+
+color: #A7A7A7;
+			@media screen and (max-width: #{$md2}px) { 
+			font-size: 24px;
+			}
+		}
+		// .slide-block__info-pass
+		&__info-pass,&__info-trans {
+      display: block;
+      font-weight: 600;
+font-size: 30px;
+line-height: calc(44/30);
+			@media screen and (max-width: #{$md2}px) { 
+			font-size: 16px;
+			}
+		}
+		// .slide-block__info-trans
+		&__info-trans {
+      
+margin-bottom: 34px;
+      
+		}
+		// .slide-block__btn
+		&__btn {
+      margin-bottom: 53px;
+		}
+
+
+
+		// .slide-block__screen
+		&__screen {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -170px;
+			
+		}
+		// .slide-block__img
+		&__img {
+			align-self: end;
+			width: 80%;
+      display: block;
+			@media screen and (max-width: #{$md2}px) { 
+			width: 60%;
+			}
+
+
+		}
+
+
+
+		// .slide-block__nav
+		&__nav {
+      margin-bottom: 54px;
+		}
+
+    		// .svlide-block__prew
+		&__prew {
+      fill:#A4A4A4;
+      width: 55px;
+      height: 16px;
+		}
+		// .svlide-block__next
+		&__next {
+      fill:#A4A4A4;
+      width: 55px;
+      height: 16px;
+      margin-left: 50px;
+		}
+
+
+		// .slide-block__thumb
+		&__thumb {
+display: flex;
+			// margin: 0px -15px;
+			
+		}
+}
+
+
+
+.thumb {
+
+
+		// padding: 0 15px;
+    background: #494949;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+// justify-content: space-between;
+// align-content: center;
+min-height: 450px;
+
+@media screen and (max-width: #{$md2}px) { 
+padding-left: 15px;
+padding-right: 15px;
+// position: relative;
+min-height: 250px;
+
+}
+		// .thumb__img
+		&__img {
+			// position: absolute;
+			// top: 0;
+			// left: 0;
+			width: 100%;
+			// object-position: center;
+			// height: 100%;
+			
+			// width: 100%;
+      // vertical-align: center ;
+      
+      // display: block;
+      object-fit: contain;
+			// align-self: center;
+      flex-grow:1;
+			// flex-shrink: 1;
+		}
+		// .thumb__title
+		&__title {
+			// padding-top: 400px;
+      margin-bottom: 24px;
+      font-size: 20px;
+line-height: calc(39/20); 
+			text-align: center;
+			@media screen and (max-width: #{$md2}px) { 
+			font-size: 14px;
+			}
+		}
+}
+.minislider {
+	width: 100%;
+	overflow: hidden;
+}

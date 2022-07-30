@@ -1,0 +1,59 @@
+.btn {
+  @include reset-btn;
+  		// .btn__svg
+		&__svg {
+      position: relative;
+      padding-right:  30px;
+      &::after {
+        display: block;
+        content:"";
+            background-color: currentColor;
+    -webkit-mask-image: url(/img/svg/chevron.svg);
+    mask-image: url(/img/svg/chevron.svg);
+        // background-image: url(../img/svg/sprite.svg#chevron_right);
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: -2px;
+        right: 0;
+        bottom: 0;
+        transform: rotate(270deg);
+      }
+		}
+}
+.btn--white {
+  background-color: $white;
+  color: $black;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 38px;
+  border-radius: 9px;
+}
+
+.btn--black {
+  @include font(16,21);
+  background: $black;
+  border-radius: 9px;
+  color: $white;
+  padding: 16px 60px;
+
+}
+.title {
+  @include h-2;
+  color: $white;
+        	@media screen and (max-width: 570px) { 
+            font-size: 36px;
+			}
+}
+.descr {
+  @include font(25,33);
+color: $gray;
+      	@media screen and (max-width: 570px) { 
+          font-size: 20px;
+			}
+}
+.text {
+  @include font(16,27);
+  color: $white;
+  
+}

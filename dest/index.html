@@ -5,26 +5,369 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Главная</title>
+   <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/style.css" />
     <!-- Icon -->
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#333333">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#333333">
     <!-- END Icon -->
 </head>
 <body>
-  <header class="header">
-  <div class="container">
+  <header class="header" id="header" >
+  <div class="wrapper wrapper__flex">
+                  <div class="header__burger">
+        <span></span>
+      </div>
+      <div class="header__logo">
+        <a href="#" class="logo__link">
+          <img src="img/logo.png" alt="" class="logo__img">
+        </a>
+      </div>
 
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Our Services</a></li>
+          <li class="nav__item"><a href="#fleets" class="nav__link">Fleets</a></li>
+        </ul>
+      </nav>
+      <div class="header__contact contact">
+        <a href="tel:+41798969696" class="contact__tel">+41 79 896 96 96</a><span class="contact__select">eng</span>
+        <a href="#contacts" class="contact__btn btn btn--white">Contact Us</a>
+      </div>
   </div>
 </header>
   
 
 
   
+<section class="hero">
+  <div class="wrapper">
+    <div class="hero__wrapper">
+      <div class="hero__line">
+        <div class="container">
+          <div class="hero__offer">
+            <h1 class="hero__title">One global solution</h1>
+            <p class="hero__descr">Offering the Best Limo Service in Switzerland, Experience it Now!</p>
+            <button class="hero__btn btn btn--black">Booking</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="container">
+  
+        <div class="hero__tabs tab">
+          <div class="tab__top">
+            <a href="#tabs-2" class="tab__link">Distance</a>
+            <a href="#tabs-1" class="tab__link">Hourly</a>
+          </div>
+          <form class="tab__form " id="tabs-1">
+            
+            <div class="tab__flex">
+              <label class="tab__label">Pick Up Address
+                <input name="" type="text" class="tab__input" placeholder="From: address, airport, hotel, ...">
+              </label>
+              <label  class="tab__label">Drop Off Address
+                <input name="" type="text" class="tab__input" placeholder="From: address, airport, hotel, ...">
+              </label>
+              <label  class="tab__label">Pick Up Date
+                <input name="" type="text" class="tab__input" placeholder="WEB 19, 2018">
+              </label>
+              <label  class="tab__label">Pick Up Time
+                <input name="" type="text" class="tab__input" placeholder="12:25 am">
+              </label>
+                <button class="tab__btn btn btn--white">Search</button>
+            </div>
+          </form>
+          <form class="tab__form " id="tabs-2" style="background-color:blue">
+                      <div class="tab__flex">
+              <label class="tab__label">Pick Up Address
+                <input name="" type="text" class="tab__input" placeholder="From: address, airport, hotel, ...">
+              </label>
+              <label  class="tab__label">Drop Off Address
+                <input name="" type="text" class="tab__input" placeholder="From: address, airport, hotel, ...">
+              </label>
+              <label  class="tab__label">Pick Up Date
+                <input name="" type="text" class="tab__input" placeholder="WEB 19, 2018">
+              </label>
+              <label  class="tab__label">Pick Up Time
+                <input name="" type="text" class="tab__input" placeholder="12:25 am">
+              </label>
+                <button class="tab__btn btn btn--white">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</section> 
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="about__title title">About US</h2>
+    <p class="about__descr descr">The best offer of world-class transportation solutions for your events</p>
+
+    <div class="about__block">
+      <div class="about__picture">
+        <img src="/img/about.jpeg" alt="" class="about__img">
+      </div>
+      <div class="about__text text">
+
+        <p>A Chauffeur Car Service company at your disposal for all your trips.</p>
+        <p>Recognized for its professionalism towards companies, professionals and individuals, Limogroup is a company based in Switzerland. Specialized in the tailor-made transport with chauffeur, we offer high end services for your private and business trips.</p>
+        <p>We have a fleet of prestigious and modern vehicles for a comfortable and secure accompaniment in the destinations of your choice. Our mission is to provide you with an excellent service as well as a personalized welcome for your short and long journeys.</p>
+        <p>Thanks to our experience, we guarantee a high-end accompaniment to meet all your needs: rental of a chauffeured car, transfers, group transfers, private events, weddings, conferences and exhibitions, meet & greet... Our bilingual drivers are available to guide you in all your trips in Switzerland and abroad.</p>
+      </div>
+    </div>
+  </div>
+</section> 
+<section class="services" id="services">
+  <div class="container"> 
+    <h2 class="services__title title">Our Services</h2>
+    <p class="services__descr descr">Worldwide fast & easy access for all occasions.</p>
+    <ul class="services__card grid">
+      <li class="card">
+        <img src="/img/services-1.jpeg" alt="" class="card__img">
+        <span class="card__name">Airport transfers</span>
+        <p class="card__text">With additional wait time and flight tracking in case of delays, our service is optimized
+          to make every airport transfer a breeze.</p>
+        <button action="#" class="card__btn btn btn--white">
+          <span class="btn__svg">Booking</span>
+        </button>
+      </li>
+      <li class="card">
+        <img src="/img/services-2.jpeg" alt="" class="card__img">
+        <span class="card__name">Intercity Rides</span>
+        <p class="card__text">Your stress-free solution for traveling between cities, with chauffeurs across the globe.
+        </p>
+        <button action="#" class="card__btn btn btn--white">
+          <span class="btn__svg">Booking</span>
+        </button>
+      </li>
+      <li class="card">
+        <img src="/img/services-3.jpeg" alt="" class="card__img">
+        <span class="card__name">Business Meeting</span>
+        <p class="card__text">Concentrate on your meeting with your partners, forget about the road and the car, which
+          will distract your thoughts.</p>
+        <button action="#" class="card__btn btn btn--white">
+          <span class="btn__svg">Booking</span>
+        </button>
+      </li>
+      <li class="card">
+        <img src="/img/services-4.jpeg" alt="" class="card__img">
+        <span class="card__name">Wedding Parties</span>
+        <p class="card__text">Our friendly, and attentive service combined with thorough attention to detail ensure you
+          can truly relax and enjoy your special day.</p>
+        <button action="#" class="card__btn btn btn--white">
+          <span class="btn__svg">Booking</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section> 
+<section class="fleets" id="fleets">
+  <div class="container">
+    <h2 class="fleets__title title">Our Fleets</h2>
+    <p class="fleets__descr descr">Choose according to your desire and circumstances</p>
+
+  </div>
+
+    <div class="sliders">
+      <div class="swiper-wrapper">
+        <div class=" swiper-slide slide-block">
+          <div class="container">
+            <div class="slide-block__top ">
+              <h3 class="slide-block__title">Mersedes Benz V Class</h3>
+              <div class="slide-block__price">190$ / <span class="slide-block__price--hour">per hour</span>
+              </div>
+            </div>
+            <span class="slide-block__info-pass">Passengers: 6</span>
+            <span class="slide-block__info-trans">Transmission: automatic</span>
+            <button class="slide-block__btn btn btn--white">Get Location</button>
+            <div class="slide-block__screen"><img src="/img/fleets-4.png" alt="" class="slide-block__img"></div>
+          </div>
+        </div>
+      </div>
+        <div class="slide-block__nav container">
+          <svg class="slide-block__prew">
+            <use xlink:href="img/svg/sprite.svg#prew"></use>
+          </svg>
+          <svg class="slide-block__next">
+            <use xlink:href="img/svg/sprite.svg#next"></use>
+          </svg>
+        </div>
+
+    </div>
+            <div class="container ">
+          <div class="minislider">
+
+          
+            <div class="swiper-wrapper slide-block__thumb ">
+              <div class="swiper-slide ">
+
+                <div class="thumb">
+                  <img class="thumb__img" src="img/fleets-1.png">
+                  <h5 class="thumb__title">BMW M5 F90 Competition</h5>
+                </div>
+              </div>
+              <div class="swiper-slide ">
+
+                <div class="thumb">
+                  <img class="thumb__img" src="img/fleets-2.png">
+                  <h5 class="thumb__title">Mersedes Benz S-Class</h5>
+                </div>
+              </div>
+              <div class="swiper-slide ">
+
+                <div class="thumb">
+                  <img class="thumb__img" src="img/fleets-5.png">
+                  <h5 class="thumb__title">Mersedes Benz V-Class</h5>
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div class="thumb">
+                  <img class="thumb__img" src="img/fleets-1.png">
+                  <h5 class="thumb__title">BMW M5 F90 Competition</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section> 
+<section class="brands" id="brands">
+  <div class="wrapper brands__wrapper">
+    <div class="container">
+      <ul class="brands__items">
+        <li class="brands__item"><img src="/img/brand/brand-1.png" alt="" class="brands__img"></li>
+        <li class="brands__item"><img src="/img/brand/brand-2.png" alt="" class="brands__img"></li>
+        <li class="brands__item"><img src="/img/brand/brand-3.png" alt="" class="brands__img"></li>
+        <li class="brands__item"><img src="/img/brand/brand-4.png" alt="" class="brands__img"></li>
+        <li class="brands__item"><img src="/img/brand/brand-5.png" alt="" class="brands__img"></li>
+      </ul>
+      
+    </div>
+  </div>
+</section> 
+<section class="faq" id="faq">
+  <div class="container">
+    <h2 class="faq__title title">Why Choose limogroup?</h2>
+    <p class="faq__descr descr">Our main advantages are to be chosen by us</p>
+    <div class="faq__flex">
+      <div class="faq-item">
+        <div class="faq-item__picture"><img src="img/faq-1.png" alt="" class="faq-item__img"></div>
+        <div class="faq-item__content">
+          <h5 class="faq-item__title">Online Reservation</h5>
+          <p class="faq-item__text text">No need to leave the house and go somewhere. Call our drivers online, choosing the right car for yourself.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__picture"><img src="/img/faq-1.png" alt="" class="faq-item__img"></div>
+        <div class="faq-item__content">
+          <h5 class="faq-item__title">Professional Drivers</h5>
+          <p class="faq-item__text text">Limogroup chauffeurs are among the best trained arnd most experienced professionals in the industry.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__picture"><img src="img/faq-3.png" alt="" class="faq-item__img"></div>
+        <div class="faq-item__content">
+          <h5 class="faq-item__title">Prestige Vehicles</h5>
+          <p class="faq-item__text text">All our cars radiate maximum comfort and safety, as well as the latest innovations that our industry can offer.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__picture"><img src="img/faq-4.png" alt="" class="faq-item__img"></div>
+        <div class="faq-item__content">
+          <h5 class="faq-item__title">Online Payment</h5>
+          <p class="faq-item__text text">For the convenience of our customers, we have made an online payment system, you just have to wait for your car</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="contacts__title title">Contact us</h2>
+    <p class="contacts__descr descr">Perhaps you have any questions? Please write to us</p>
+    <div class="contacts__block ">
+      <form action="#" class="contacts__form" id="contacts-form">
+        <input type="text" class="contacts__name contacts__input" name="name" placeholder="Name ...">
+        <input type="email" class="contacts__email contacts__input" name="name" placeholder="example@gmail.com">
+        <input type="tel" class="contacts__tel contacts__input" name="name" placeholder="+998 90 901  54 55">
+        <textarea name="message" class="contacts__message contacts__textarea" cols="30" placeholder="Message ..." rows="5"></textarea>
+        <div class="contacts__down">
+          <input type="checkbox" id="chek" class="contacts__checkbox contacts__input--chekbox" name="chek" value="yes">
+          <label class="contacts__label" for="chek" >I agree to the Terms of Service and Privacy Policy.
+          </label>
+          <button class="contacts__btn btn btn--white">Submit Now</button>
+        </div>
+
+      </form>
+      <div class="contacts__picture"><img src="/img/contact.jpeg" alt="" class="contacts__img"></div>
+    </div>
+  </div>
+</section> 
 
   <footer class="footer">
-  <div class="container">
-    
+  <div class="container footer__flex">
+    <div class="footer__top">
+      <div class="footer__name">
+        <h3 class="footer__title">Subscribe our newsletter</h3>
+        <p class="footer__descr descr">Want to know about our offers first?</p>
+      </div>
+      <a href="#" class="footer__logo"><img src="/img/Footerlogo.png" alt="" class="footer__img"></a>
+    </div>
+    <div class="footer__midle">
+      <form action="#" class="footer__form">
+        <input type="email" name="footer-email" class="footer__input" placeholder="example@gmail.com">
+        <button type="submit" class="footer__btn btn btn--black">Subscribe</button>
+      </form>
+      <ul class="footer__policy">
+        <li class="policy__nam"><a href="#" class="policy__link">Legal</a></li>
+        <li class="policy__nam"><a href="#" class="policy__link">Privacy Policy</a></li>
+        <li class="policy__nam"><a href="#" class="policy__link">Terms of Use</a></li>
+      </ul>
+    </div>
+    <ul class="footer__down down">
+      <li class="down__item">
+        <svg class="down__icon down__icon--phone"><use xlink:href="img/svg/sprite.svg#phone"></use></svg>
+        <span class="down__text">+41 79 896 96 96</span>
+      </li>
+      <li class="down__item">
+        <svg class="down__icon"><use xlink:href="img/svg/sprite.svg#location"></use></svg>
+        <span class="down__text"> ch. des Saules 19, 1800 Vevey, 
+Switzerland</span>
+      </li>
+      <li class="down__item">
+        <svg class="down__icon"><use xlink:href="img/svg/sprite.svg#mail"></use></svg>
+        <span class="down__text"> info@limogroup.ch</span>
+      </li>
+      <li class="down__item">
+        <svg class="down__icon"><use xlink:href="img/svg/sprite.svg#clock"></use></svg>
+        <span class="down__text">Every Day Around the clock</span>
+      </li>
+    </ul>
+        <div class="scroll">
+          <a href="#header" class="scroll__link">
+            <svg class="scroll__icon">
+              <use xlink:href="img/svg/sprite.svg#arrow_top"></use>
+            </svg>
+          </a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">Copyright © 2022 The Limousine. All Rights Reserved.</p>
+
   </div>
 </footer>
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

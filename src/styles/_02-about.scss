@@ -1,0 +1,62 @@
+/* 02-about ================================================== */
+
+.about {
+	padding-top: 90px;
+				@media screen and (max-width: 570px) { 
+					padding: 40px 20px 20px;
+			}
+	// .about__title
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	// .about__descr
+	&__descr {
+		max-width: 700px;
+		margin-bottom: 13px;
+	}
+
+	// .about__block
+	&__block {
+		background: #333333;
+		border-radius: 27px;
+		display: flex;
+		padding: 53px;
+
+		@media screen and (max-width: #{$md2}px) {
+			flex-direction: column;
+			padding: 33px 33px;
+		}
+	}
+
+	// .about__picture
+	&__picture {
+		width: 50%;
+
+		@media screen and (max-width: #{$md2}px) {
+			width: 100%;
+		}
+	}
+
+	// .about__img
+	&__img {
+		border-radius: 16px;
+	}
+
+	// .about__text
+	&__text {
+		width: 50%;
+
+		margin-left: 53px;
+		margin-right: 20px;
+
+		@media screen and (max-width: #{$md2}px) {
+			width: 100%;
+			margin: 53px 0 0;
+		}
+
+		p {
+			margin-bottom: 27px;
+		}
+	}
+}

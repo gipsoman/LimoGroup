@@ -15,10 +15,22 @@ html {
   // text-rendering: optimizeLegibility;   
 }
 
-//  body{ 
+ body{ 
 
+  background-image:  url(../img/about-bg.svg),url(../img/faq-bg.svg),linear-gradient($bg 0%);
+  background-repeat:repeat,repeat, repeat;
+  background-position: 0 0,top 707px left 0, center;
+  background-size: 100% 150%,100% 150%,cover;
+  
+  color: $white;
   // zoom: 110%
-// } 
+  @media screen and (max-width: #{$md4}px) { 
+     background-repeat:no-repeat,no-repeat, repeat;
+  background-position:center,center,center;
+  background-size: cover,cover,cover;
+  }
+} 
+
 
 .cf:after,
 .cf:before { content: " "; 
@@ -29,14 +41,28 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
   // padding-left: 15px;
   // padding-right: 15px;
+  
   margin: 0 auto;
   @media (max-width: #{$md1}px) {max-width: 970px;}
-  @media screen and (max-width: #{$md2}px) {max-width: 720px;}
+  @media screen and (max-width: #{$md2}px) {max-width: 720px;padding: 0 10px;}
   @media screen and (max-width: #{$md3}px) {max-width:none;padding: 0 10px;};
 }
+.wrapper {
+    width: 100%;
+  max-width: 1716px;
+  margin: 0 auto;
+  // overflow: hidden;
+ padding-left: 15px;
+ padding-right: 15px;
+  @media screen and (max-width: #{$md2}px) {}
+}
+
+
+
+
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
@@ -44,6 +70,10 @@ h1,h2,h3,h4,h5,h6{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap:30px;
+    @media screen and (max-width: #{$md2}px) { 
+        grid-template-columns: repeat(6, 1fr);
+        gap:20px;
+    }
 }
 
 a {
@@ -64,11 +94,12 @@ img{
   border: nonr;
   padding: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 @import "_components/_global.scss";
 @import "_header.scss";
+@import "_burger.scss";
 @import "_main.scss";
 @import "_footer.scss";
 

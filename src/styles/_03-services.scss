@@ -1,0 +1,75 @@
+/* 03-services ================================================== */
+.services {
+  padding-top: 90px;
+	@media screen and (max-width: 570px) { 
+			padding-top: 40px;
+	}
+		// .services__title
+		&__title {
+      margin-bottom: 8px;
+		}
+		// .services__descr
+		&__descr {
+      margin-bottom: 56px;
+		}
+		// .services__card
+		&__card {
+		}
+}
+
+.card {
+  grid-column: 3 span;
+  background: #333333;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 20px 21px 20px 21px;
+// min-height: 473px;
+height: 100%;
+position: relative;
+@media screen and (max-width: 570px) { 
+	grid-column: 6 span;
+}
+		// .card__img
+		&__img {
+      // display: block;
+      width: 100%;
+      // height: auto;
+      object-fit: cover;
+      min-height: 203px;
+
+			margin-bottom: 20px;
+      // vertical-align: center;
+		}
+		// .card__name
+		&__name {
+      // margin-top: 29px;
+      margin-bottom: 10px;
+		}
+		// .card__text
+		&__text {
+			flex:1 1 auto;
+      margin-bottom: 20px;
+      font-size: 16px;
+line-height: 21px;
+		}
+		// .card__btn
+		&__btn {
+			align-self: flex-start;
+			// flex: 1 0 30%;
+      padding: 8px 12px 8px 24px;
+			&::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+			}
+			@media screen and (max-width: 570px) { 
+			    
+			}
+		}
+}
+
+
