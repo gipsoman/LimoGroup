@@ -18,7 +18,7 @@
       background-size: 60%;
       width: 100%;
 
-      @media screen and (max-width: $md3+px) {
+      @media screen and (max-width: #{$md3}px) {
          background-position: right top 60%;
       }
 
@@ -197,7 +197,7 @@
             grid-row: 2;
          }
 
-         @media screen and (max-width: $md4+px) {
+         @media screen and (max-width: #{$md4}px) {
             //  grid-row: 3;
             // width: 100%;
             // grid-column: span 1;

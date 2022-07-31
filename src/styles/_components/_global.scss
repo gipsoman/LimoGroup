@@ -57,3 +57,79 @@ color: $gray;
   color: $white;
   
 }
+
+
+.aside {
+  display: flex;
+  flex-direction: column;
+
+
+  
+		// .aside__wrapper
+		&__wrapper {
+      background: #333333;
+border-radius: 17px;
+padding: 32px 21px 0px 21px;
+margin-bottom: 15px;
+		}
+
+		// .aside__title
+		&__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: calc(24/18);
+      margin-bottom: 5px;
+		}
+		// .aside__lists
+		&__lists {
+      display: flex;
+      flex-wrap: wrap;
+		}
+		// .aside__list
+		&__list {
+      padding: 25px 26px 18px 1px;
+      border-bottom: 1px dashed #B3B3B3;
+      width: 100%;
+      &:nth-last-child(1){
+        border-bottom: none;
+        width: 45%;
+        padding-right: 0;
+      }
+      &:nth-last-child(2){
+        border-bottom: none;
+        width: 55%;
+        padding-right: 0;
+      }
+		}
+		// .aside__label
+		&__label {
+      font-size: 15px;
+      line-height: calc(20/15);
+color: rgba(189, 189, 189, 0.5);
+margin-bottom: 11px;
+		}
+		// .aside__vvalue
+		&__vvalue {
+      font-size: 16px;
+      line-height: calc(21/16);
+		}
+		// .aside__botton
+		&__botton {
+      padding-top: 21px;
+       border-top: 1px dashed #B3B3B3;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: calc(21/16);
+		}
+		// .aside__cost
+		&__cost {
+      
+
+
+		}
+		// .aside__total
+		&__total {
+		}
+}

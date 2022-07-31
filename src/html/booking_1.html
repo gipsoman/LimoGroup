@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include("kit/_head.html",
+{"title" : "Booking Step 1",
+"slider" : "",
+})
+<body>
+  @@include("kit/_header.html")
+<section class="page" id="page">
+  <div class="page__wrapper">
+    <div class="page__top-bg">
+      <div class="page__header">
+        <h1 class="page__title">Booking</h1>
+        <p class="page__descr">HOME - BOOKING</p>
+      </div>
+      <img src="/img/page_bg.png" alt="" class="page__img">
+
+    </div>
+    <div class="page__line">
+      <div class="container">
+        <ul class="page__info">
+          <li class="page__item page__item--disable"><span class="page__number ">1</span>Enter Ride Details</li>
+          <li class="page__item page__item--active"><span class="page__number ">2</span>Choose a Vehicle</li>
+          <li class="page__item"><span class="page__number">3</span>Enter Contact Details</li>
+          <li class="page__item"><span class="page__number">4</span>Booking Summary</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="page__body b-1">
+      <aside class="b-1__aside aside">
+        <div class="aside__wrapper">
+          <h4 class="aside__title">Summary</h4>
+          <ul class="aside__lists">
+            <li class="aside__list">
+              <div class="aside__label">SERVICE TYPE</div>
+              <div class="aside__vvalue">Hourly</div>
+            </li>
+            <li class="aside__list">
+              <div class="aside__label">PICKUP LOCATION</div>
+              <div class="aside__vvalue">Switzerland Park, Chandragiri</div>
+            </li>
+            <li class="aside__list">
+              <div class="aside__label">DROP OFF LOCATION</div>
+              <div class="aside__vvalue">Switzerland Park, Chandragiri</div>
+            </li>
+            <li class="aside__list">
+              <div class="aside__label">PICKUP DATE, TIME</div>
+              <div class="aside__vvalue">17-05-2022, 8:00</div>
+            </li>
+            <li class="aside__list">
+              <div class="aside__label">TOTAL DISTANCE</div>
+              <div class="aside__vvalue">0 km</div>
+            </li>
+            <li class="aside__list">
+              <div class="aside__label">TOTAL TIME</div>
+              <div class="aside__vvalue">7 h 0 m</div>
+            </li>
+          </ul>
+        </div>
+        <div class="aside__botton">
+          <div class="aside__cost">Total</div>
+          <div class="aside__total">$450.00</div>
+        </div>
+      </aside>
+
+      <div class="b-1__body slot">
+        <div class="slot__item">
+          <div class="slot__picture">
+            <img src="/img/fleets-1.png" alt="" class="slot__img">
+          </div>
+          <div class="slot__text">
+              <h5 class="slot__title">BMW M5 f90 Competition</h5>
+              <span class="slot__price">$390.00</span>
+              <span class="slot__moreinfo">More Info</span>
+          </div>
+          <div class="slot__right">
+            <button class="slot__btn btn btn--white">Select</button>
+            <div class="slot__select">
+              <span class="slot__info slot__info--pass">2</span>
+              <span class="slot__info slot__info--bags">2</span>
+            </div>
+          </div>
+        </div>
+        <div class="slot__item">
+        <div class="slot__picture">
+          <img src="/img/fleets-2.png" alt="" class="slot__img">
+        </div> 
+            <div class="slot__text">
+              <h5 class="slot__title"> Mercedes Benz S-Class </h5>
+              <span class="slot__price">$480.00</span>
+              <span class="slot__moreinfo">More Info</span>
+            </div>
+          <div class="slot__right">
+            <button class="slot__btn btn btn--white">Select</button>
+            <div class="slot__select">
+              <span class="slot__info slot__info--pass">2</span>
+              <span class="slot__info slot__info--bags">2</span>
+            </div>
+          </div>
+        </div>
+        <div class="slot__item">
+        <div class="slot__picture">
+          <img src="/img/fleets-5.png" alt="" class="slot__img">
+        </div>
+            <div class="slot__text">
+              <h5 class="slot__title">Mercedes Benz V-Class </h5>
+              <span class="slot__price">$445.00</span>
+              <span class="slot__moreinfo">More Info</span>
+            </div>
+          <div class="slot__right">
+            <button class="slot__btn btn btn--white">Select</button>
+            <div class="slot__select">
+              <span class="slot__info slot__info--pass">7</span>
+              <span class="slot__info slot__info--bags">7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </section>
+          <div class="page__navigate navigate">
+      <a href="#" class="navigate__link navigate__link--prev"><svg class="navigate__svg">
+        <use xlink:href="img/svg/sprite.svg#chevron"></use>
+      </svg>Choose Ride Details </a>
+      <a href="#" class="navigate__link">Enter Contact Detals<svg class="navigate__svg">
+        <use xlink:href="img/svg/sprite.svg#chevron"></use>
+      </svg></a></a>
+    </div>
+    </div>
+    @@include("kit/_05-brands.html")
+  </div>
+</section>
+
+
+  @@include("kit/_footer.html")
+  @@include("kit/_script.html")
+</body>
+</html>

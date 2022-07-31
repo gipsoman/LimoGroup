@@ -1,6 +1,6 @@
 const { src, dest, watch, series, parallel } = require("gulp");
 const path = require("./config/path.js")
-const browserSync = require("browser-sync").create();
+const browserSync = require("browser-sync");
 const del = require("del");
 
 
